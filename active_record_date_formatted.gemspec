@@ -5,7 +5,7 @@ require "active_record_date_formatted/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "date_formatted"
+  s.name        = "active_record_date_formatted"
   s.version     = ActiveRecordDateFormatted::VERSION
   s.authors     = ["Igor Jancev"]
   s.email       = ["igor@masterybits.com"]
