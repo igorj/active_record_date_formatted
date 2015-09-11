@@ -9,9 +9,8 @@ Gem::Specification.new do |s|
   s.version     = ActiveRecordDateFormatted::VERSION
   s.authors     = ["Igor Jancev"]
   s.email       = ["igor@masterybits.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of DateFormatted."
-  s.description = "TODO: Description of DateFormatted."
+  s.homepage    = "https://github.com/igorj/active_record_date_formatted"
+  s.summary     = "Adds *_formatted and *_formatted= methods to all rails model's date attributes"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
