@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Adds *_formatted and *_formatted= methods to all rails model's date attributes"
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.2.4"

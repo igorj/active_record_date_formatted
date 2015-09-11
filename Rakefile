@@ -1,26 +1,3 @@
-begin
-  require 'bundler/setup'
-rescue LoadError
-  puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
-end
-
-require 'rdoc/task'
-
-RDoc::Task.new(:rdoc) do |rdoc|
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'DateFormatted'
-  rdoc.options << '--line-numbers'
-  rdoc.rdoc_files.include('README.rdoc')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end
-
-
-
-
-
-
-Bundler::GemHelper.install_tasks
-
 require 'rake/testtask'
 
 Rake::TestTask.new(:test) do |t|
@@ -30,5 +7,19 @@ Rake::TestTask.new(:test) do |t|
   t.verbose = false
 end
 
+desc "Bump the patch version, tag and release gem"
+task :release_patch do
+  system "gem bump --version patch --tag --release"
+end
+
+desc "Bump the minor version, tag and release gem"
+task :release_patch do
+  system "gem bump --version minor --tag --release"
+end
+
+desc "Bump the major version, tag and release gem"
+task :release_patch do
+  system "gem bump --version major --tag --release"
+end
 
 task default: :test

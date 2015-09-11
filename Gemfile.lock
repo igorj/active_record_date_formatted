@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    date_formatted (0.0.1)
+    active_record_date_formatted (0.0.2)
       rails (~> 4.2.4)
 
 GEM
@@ -103,6 +103,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  date_formatted!
+  active_record_date_formatted!
   gem-release
   sqlite3

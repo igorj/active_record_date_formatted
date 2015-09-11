@@ -1,3 +1,0 @@
-= DateFormatted
-
-This project uses MIT-LICENSE.
