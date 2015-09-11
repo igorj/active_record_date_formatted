@@ -13,12 +13,12 @@ task :release_patch do
 end
 
 desc "Bump the minor version, tag and release gem"
-task :release_patch do
+task :release_minor do
   system "gem bump --version minor --tag --release"
 end
 
 desc "Bump the major version, tag and release gem"
-task :release_patch do
+task :release_major do
   system "gem bump --version major --tag --release"
 end
 
