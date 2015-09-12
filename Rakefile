@@ -8,17 +8,17 @@ Rake::TestTask.new(:test) do |t|
 end
 
 desc "Bump the patch version, tag and release gem"
-task :release_patch do
+task :release_patch => :test do
   system "gem bump --version patch --tag --release"
 end
 
 desc "Bump the minor version, tag and release gem"
-task :release_minor do
+task :release_minor => :test  do
   system "gem bump --version minor --tag --release"
 end
 
 desc "Bump the major version, tag and release gem"
-task :release_major do
+task :release_major => :test  do
   system "gem bump --version major --tag --release"
 end
 
