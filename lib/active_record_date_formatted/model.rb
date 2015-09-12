@@ -5,7 +5,7 @@ module ActiveRecordDateFormatted
 
     def inherited(subclass)
       super
-      subclass.add_date_formatted_methods
+      subclass.add_date_formatted_methods unless subclass == ActiveRecord::SchemaMigration
     end  
     
     def add_date_formatted_methods
