@@ -5,7 +5,7 @@ module ActiveRecordDateFormatted
 
     def inherited(subclass)
       super
-      subclass.add_date_formatted_methods unless subclass == ActiveRecord::SchemaMigration
+      subclass.add_date_formatted_methods unless subclass == ActiveRecord::SchemaMigration || subclass.to_s.ends_with?('Temp') # todo nasty bugfix for temporary migration classes with custom table names
     end  
     
     def add_date_formatted_methods
